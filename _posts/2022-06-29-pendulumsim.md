@@ -8,7 +8,7 @@ so one of my youtube rabbit holes led me to this:
 <div>{%- include extensions/youtube.html id='d0Z8wLLPNE0' -%}</div>
 
 so i thought i'd try and make a pendulum physics simulator of my own. in order to do that, i needed two things:
-
+<!--more-->
 * a diffeq solver to solve motion equations, and 
 * a graphics library to draw my pendulums in motion.
 
