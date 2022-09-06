@@ -36,8 +36,8 @@
         font-family: OMORI_GAME;
         font-size: large;
         padding: map-get($spacers, 2) map-get($spacers, 3);
-        background-color: rgba($grey, .1);
-        border: 1px solid $grey;
+        background-color: rgba($red, .1);
+        border: 1px solid $red;
         border-radius: map-get($base, border-radius);
     }
 }
