@@ -40,4 +40,10 @@
         border: 1px solid $red;
         border-radius: map-get($base, border-radius);
     }
+    p.greybox {
+        padding: map-get($spacers, 2) map-get($spacers, 3);
+        background-color: rgba($grey, .1);
+        border: 1px solid $grey;
+        border-radius: map-get($base, border-radius);
+    }
 }
