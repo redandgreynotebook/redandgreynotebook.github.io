@@ -14,14 +14,14 @@ pick two points in a square, uniformly at random. what is the probability that t
 
 working with random coordinates $\left(x_1, y_1\right), \left(x_2, y_2\right)$ doesn't really take us anywhere. we switch to looking at two other things that can define a circle: 
 
-* midpoint of the circle $O = (h, k)$
+* center of the circle $O = (h, k)$
 * diameter length $d$ of the circle
 
 in hopes of getting something useful. the distribution of $d$ can be found, after a bit of manipulation from page 3 of [this paper](https://people.kth.se/~johanph/habc.pdf), to 
 
 \begin{equation}
 f_D(d) = \begin{cases}
-2d\left(d^2 - 4d + \pi\right) & \text{if }d <= 1 \newline
+2d\left(d^2 - 4d + \pi\right) & \text{if }d \leq 1 \newline
 2d\left[4\arcsin\left(\dfrac{1}{d}\right) + 4\sqrt{d^2 - 1} - d^2 - \pi - 2\right] & \text{if }1 < d \leq \sqrt{2} \newline
 0 & \text{otherwise}
 \end{cases}
@@ -65,3 +65,5 @@ $$\begin{align*}
 and we are done.
 
 the [official solution](https://www.janestreet.com/puzzles/some-off-square-solution/) involved less calculation. while the first probability should be clear as an integral, the second probability of $\frac{3}{4}$ might be better understood in the reverse direction. if you know that your diameter (vector extended past the circle's center) must lie within the square, then your circle center must lie within the square scaled down by half, where the center of scaling is your originally chosen diameter endpoint. thus, the ratio of the smaller square, the successful region, to the larger one, is $\frac{1}{4}$. 
+
+maybe i really should go back and try and make my solutions as calculation-free as possible after solving. the issue is, not every problem [has such](/2023/06/08/continuousblackjack.html) [a simple solution](/2023/09/06/buffonsneedle.html) so i get paranoid if one exists at all. 
