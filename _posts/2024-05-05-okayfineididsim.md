@@ -34,7 +34,7 @@ however, for certain values of $r$, this doesn't make sense, namely when $\Gamma
 p(b) = \int_0^{\frac{b}{2}} 2r \dif r + \int_{\frac{b}{2}}^1 p(r; b) \dif r = \dfrac{b^2}{4} + \int_{\frac{b}{2}}^1 \dfrac{\arcsin\left(\frac{\lvert r - b\rvert}{r}\right)}{\pi} \dif r
 \end{equation}
 
-since bob has control over $b$, he will want to minimize this probability. so now just chuck it into mathematica. 
+since bob has control over $b$, he will want to minimize this probability. now just chuck it into mathematica. 
 
 ```mathematica
 p[b_] := FullSimplify[(b/2)^2 + Integrate[ArcSin[Abs[r - b]/r]*2*r/Pi, {r, b/2, 1}, 
