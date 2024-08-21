@@ -5,7 +5,7 @@ comments: true
 math: true
 ---
 
-i mean, we did [continuous blackjack](/js0323.html) so this is just continuing a trend. what's next? continuous roulette? 
+i mean, we did [continuous blackjack](https://www.example.com) so this is just continuing a trend. what's next? continuous roulette? 
 
 <!--more-->
 
