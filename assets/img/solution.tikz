@@ -1,0 +1,20 @@
+\begin{tikzpicture}
+	\begin{pgfonlayer}{nodelayer}
+		\node [style=node] (0) at (0, 7) {};
+		\node [style=node] (2) at (1, 6) {};
+		\node [style=node] (3) at (-0.5, 5) {};
+		\node [style=node] (4) at (0.5, 5) {};
+		\node [style=node] (5) at (1.5, 5) {};
+		\node [style=node] (6) at (-1.5, 5) {};
+		\node [style=node] (7) at (0, 7) {};
+		\node [style=node] (8) at (-1, 6) {};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw [style=directed red] (7) to (8);
+		\draw [style=dashed directed] (7) to (2);
+		\draw [style=directed red] (8) to (6);
+		\draw [style=directed red] (8) to (3);
+		\draw [style=dashed directed] (2) to (4);
+		\draw [style=dashed directed] (2) to (5);
+	\end{pgfonlayer}
+\end{tikzpicture}
