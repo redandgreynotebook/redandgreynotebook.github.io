@@ -67,7 +67,7 @@ and we are done.
 
 the [official solution](https://www.janestreet.com/puzzles/some-off-square-solution/) involved less calculation. while the first probability should be clear as an integral, the second probability of $\frac{3}{4}$ might be better understood in the reverse direction. if you know that your diameter (vector extended past the circle's center) must lie within the square, then your circle center must lie within the square scaled down by half, where the center of scaling is your originally chosen diameter endpoint. thus, the ratio of the smaller square, the successful region, to the larger one, is $\frac{1}{4}$. in other words, if you fix one perimeter point, then the region of valid diameter endpoints is a circle with twice the radius of the region of valid center points and has four times the area, hence the multiplying by four. 
 
-maybe i really should go back and try and make my solutions as calculation-free as possible after solving. the issue is, not every problem [has such](/posts/continuousblackjack.html) [a simple solution](/posts/buffonsneedle.html) so i get paranoid if one exists at all. 
+maybe i really should go back and try and make my solutions as calculation-free as possible after solving. the issue is, not every problem [has such](/posts/continuousblackjack) [a simple solution](/posts/buffonsneedle) so i get paranoid if one exists at all. 
 
 ### extension to higher dimensions
 
