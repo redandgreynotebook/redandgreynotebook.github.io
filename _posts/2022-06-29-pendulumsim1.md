@@ -126,7 +126,7 @@ put this together, and you get a nice, simple pendulum animation.
 
 ### now with some class
 
-but what if you want multiple pendulums? creating multiple pendulums this way would be a pain. this is where we use classes. between different types of pendulums -- simple, double, [elastic](https://en.wikipedia.org/wiki/Elastic_pendulum), single, [coupled](http://www.maths.surrey.ac.uk/explore/michaelspages/documentation/Coupled), engaged, married, it's complicated -- they all share a lot in common:
+but what if you want multiple pendulums? creating multiple pendulums this way would be a pain. this is where we use classes. between different types of pendulums -- simple, double, [elastic](https://en.wikipedia.org/wiki/Elastic_pendulum), single, [coupled](https://www.maths.surrey.ac.uk/explore/michaelspages/documentation/Coupled), engaged, married, it's complicated -- they all share a lot in common:
 
 * a system of diffeqs as their motion equation
 * a particle trail (we'll get to this later)
