@@ -22,7 +22,7 @@ this grid can be partitioned into nine L-shaped "hooks": the largest 9-by-9 (so,
 
 # solution
 
-well, didn't we [do this before](https://www.example.com)? almost -- the constraints were different, but our general procedure for partitioning the grid, creating configurations, and high-level backtracking should be fine. it remains to modify the small-scale solving functions, namely `forced_board`. instead of worrying about each row and column, we instead try and solve each constraint separately, then taking the intersection of these solutions to see which cells are forced (hint: it's a lot of them). we'll be using terms brought over from the previous puzzle, so take a look at that first for a refresher.
+well, didn't we [do this before](/js0623.html)? almost -- the constraints were different, but our general procedure for partitioning the grid, creating configurations, and high-level backtracking should be fine. it remains to modify the small-scale solving functions, namely `forced_board`. instead of worrying about each row and column, we instead try and solve each constraint separately, then taking the intersection of these solutions to see which cells are forced (hint: it's a lot of them). we'll be using terms brought over from the previous puzzle, so take a look at that first for a refresher.
 
 for an individual constraint, and the board's configuration, we can use backtracking to solve it. each of the (up to) four orthogonally adjacent cells can either be filled or not, so we backtrack on each cell. 
 
